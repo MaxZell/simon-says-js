@@ -28,6 +28,9 @@ function loadScore(){
 	}
 	document.getElementById("score").innerHTML = score
 	console.log("old score loaded")
+	if (localStorage.getItem("patapon") == 1) {
+		playPata()
+	}
 }
 
 function startNewGame(){
@@ -158,4 +161,13 @@ function blockBtns(status){
 	greenBtn.disabled = status
 	startBtn.disabled = status
 	repeatBtn.disabled = status
+}
+
+function playPata() {
+	redAudio = new Audio('./sources/audio/patapon/Pata-1.wav')
+	blueAudio = new Audio('./sources/audio/patapon/Pon-1.wav')
+	yellowAudio = new Audio('./sources/audio/patapon/Don-1.wav')
+	greenAudio = new Audio('./sources/audio/patapon/Chaka-1.wav')
+	winAudio = new Audio('./sources/audio/patapon/win.wav')
+	wrongAudio = new Audio('./sources/audio/patapon/wrong.wav')
 }
