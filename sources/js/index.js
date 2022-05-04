@@ -170,4 +170,6 @@ function playPata() {
 	greenAudio = new Audio('./sources/audio/patapon/Chaka-1.wav')
 	winAudio = new Audio('./sources/audio/patapon/win.wav')
 	wrongAudio = new Audio('./sources/audio/patapon/wrong.wav')
+
+	document.body.style.backgroundImage = "url('./sources/img/patapon_gb.jpg')"
 }
