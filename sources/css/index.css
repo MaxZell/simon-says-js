@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 2vh;
+}
+
+.simon-field{
+	display: block;
+	height: 50vh;
+	width: 50vh;
+	border-radius: 100%;
+	background-color: black;
+	margin: auto;
+	padding: 0;
+}
+
+.simon-button{
+	z-index: 1;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20vh;
+    height: 20vh;
+    border: 0px;
+	cursor: pointer;
+	margin: 10px;
+  	transform: translateY(2.5vh);
+}
+
+button:hover{
+	filter: brightness(50%);
+}
+
+#red{
+	background: red;
+	border-top-right-radius: 0;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+	
+}
+
+#blue{
+	background: blue;
+	border-top-right-radius: 100%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#yellow{
+	background: yellow;
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0;
+}
+
+#green{
+	background: green;
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100%;
+}
+
+.simon-helper-button{
+	display: block;
+	width: 50vh;
+	margin: auto;
+	padding: 1vh;
+	font-size: 2vh;
+	cursor: pointer;
+}
+
+#start-btn{
+	margin-top: 5vh;
+	color: white;
+	background-color: crimson;
+}
+
+#repeat-btn{
+	margin-top: 2vh;
+	color: white;
+	background-color: darkslateblue;
+}

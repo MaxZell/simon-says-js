@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simon Says</title>
+        <meta charset="UTF-8">
+		<link rel="icon" href="./sources/img/logo.png">
+        <link rel="stylesheet" href="./sources/css/index.css">
+    </head>
+    <body onload="loadScore()">
+		<h1>Simon Says</h1>
+		<p id="score-title">Score: <span id="score">0</span></p>
+		<div class="simon-field">
+			<button id="red" class="simon-button" onclick="pressRedBtn()"></button>
+			<button id="blue" class="simon-button" onclick="pressBlueBtn()"></button>
+			<button id="green" class="simon-button" onclick="pressGreenBtn()"></button>
+			<button id="yellow" class="simon-button" onclick="pressYellowBtn()"></button>
+		</div>
+		<button id="start-btn" class="simon-helper-button" onclick="startNewGame()">Start</button>
+		<button id="repeat-btn" class="simon-helper-button" onclick="startNewGame()">Repeat</button>
+		<script src="./sources/js/index.js"></script>
+    </body>
+</html>
