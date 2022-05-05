@@ -29,10 +29,11 @@ html, body{
 	cursor: pointer;
 	margin: 10px;
   	transform: translateY(2.5vh);
+	filter: brightness(50%);
 }
 
-button:hover{
-	filter: brightness(50%);
+button:active{
+	filter: brightness(100%);
 }
 
 #red{
