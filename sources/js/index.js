@@ -224,4 +224,13 @@ function playPata() {
 	wrongAudio = new Audio('./sources/audio/patapon/wrong.wav')
 
 	document.body.style.backgroundImage = "url('./sources/img/patapon_gb.jpg')"
+	document.getElementById("pata-btn").style.visibility = "hidden"
 }
+
+window.addEventListener('storage', () => {
+	// secret function - change design and audio samples
+	if (localStorage.getItem("patapon") == 1) {
+		playPata()
+		console.log("play patapon!")
+	}
+})

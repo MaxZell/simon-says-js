@@ -89,3 +89,17 @@ button:active{
 	color: white;
 	background-color: darkslateblue;
 }
+
+#pata-btn{
+	display: block;
+	width: 50vh;
+	margin: auto;
+	padding: 1vh;
+	font-size: 2vh;
+	cursor: none;
+	/* : hidden; */
+	margin-top: 6vh;
+	color: white;
+	background-color: white;
+	border: 0;
+}
